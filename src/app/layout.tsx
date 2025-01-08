@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import React from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import { BackgroundBeam } from '@/components/BackgroundBeam';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <SpeedInsights />
           <Analytics />
+          <BackgroundBeam />
         </ThemeProvider>
       </body>
     </html>
