@@ -77,7 +77,7 @@ export default function HomePage() {
             >
               <RiWhatsappLine size="25" />
             </a>
-            <a href="/Mehdi_Vaezi_canva.pdf" target="_blank">
+            <a href="/Mehdi_Vaezi-CV.pdf" target="_blank">
               <RiFilePdf2Line size="25" />
             </a>
           </div>
