@@ -29,13 +29,13 @@ export default function HomePage() {
             <h1 className="mt-8 text-4xl font-bold">
               <ColourfulText text="Mehdi Vaezi" />
             </h1>
-            <h2 className="mb-2 text-[107%] font-light">Senior Front-End Developer</h2>
+            <h2 className="mb-2 text-xl font-light">Senior Front-End Developer</h2>
             <TypeAnimation
-              className=""
+              className="text-xl"
               sequence={[1000, "Javascript Engineer", 4000, "React/Next Developer", 3000, "Vue/Nuxt Developer", 3000, "React-Native Developer", 2000]}
               speed={60}
               deletionSpeed={80}
-              wrapper={"h6"}
+              wrapper={"h5"}
               repeat={Infinity}
             />
             <article className="mt-6 flex max-w-2xl flex-col gap-2 text-center md:text-left">

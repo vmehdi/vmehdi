@@ -10,7 +10,7 @@ interface MainProviderType extends HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-export function MainProvider({ children }: MainProviderType) {
+export function MainProvider({ className, children }: MainProviderType) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   function handleMouseMove({ currentTarget, clientX, clientY }: ReactMouseEvent<HTMLDivElement>) {
@@ -25,7 +25,7 @@ export function MainProvider({ children }: MainProviderType) {
   const handleMouseLeave = () => setIsHovering(false);
   return (
     <main
-      className={cn('"group/spotlight dark:border-neutral-800" relative w-full rounded-md border border-neutral-800 bg-black p-10')}
+      className={cn('"group/spotlight dark:border-neutral-800" relative w-full rounded-md border border-neutral-800 bg-black p-10', className)}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

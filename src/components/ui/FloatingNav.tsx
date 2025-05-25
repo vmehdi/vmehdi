@@ -3,6 +3,7 @@ import React, { ReactNode, useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "motion/react";
 import { cn } from "@/utils/cn";
 import { ThemeChanger } from "@/components/ThemeChanger";
+import { GlowingEffect } from "@/components/ui/GlowingEffect";
 
 export const FloatingNav = ({
   navItems,

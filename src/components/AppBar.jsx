@@ -1,6 +1,7 @@
 "use client";
 import { Home, LayoutPanelLeft, MessageSquareMore } from "lucide-react";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { GlowingEffect } from "@/components/ui/GlowingEffect";
 
 const navItems = [
   {

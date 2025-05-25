@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -7,14 +7,18 @@ import { Analytics } from "@vercel/analytics/next";
 import { BackgroundBeam } from "@/components/ui/BackgroundBeam";
 import React from "react";
 import { AppBar } from "@/components/AppBar";
+import { BackgroundGradientAnimation } from "@/components/ui/BackgroundGradientAnimation";
+import { BackgroundContainer } from "@/components/ui/BackgroundContainer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceSans = Space_Grotesk({
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space-grotesk-sans",
   subsets: ["latin"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
+  variable: "--font-space-mono",
   subsets: ["latin"]
 });
 
@@ -59,14 +63,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning className={spaceSans.className}>
+      <body>
         <ThemeProvider enableSystem enableColorScheme themes={["light", "dark", "unicorn"]}>
           <AppBar />
+          <BackgroundContainer />
           <main className=" min-h-dvh bg-gray-50 pt-32 dark:bg-gray-800">{children}</main>
           <SpeedInsights />
           <Analytics />
-          <BackgroundBeam />
         </ThemeProvider>
       </body>
     </html>

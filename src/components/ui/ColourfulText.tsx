@@ -3,18 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 
 export function ColourfulText({ text }: { text: string }) {
-  const colors = [
-    "rgb(131, 179, 32)",
-    "rgb(47, 195, 106)",
-    "rgb(42, 169, 210)",
-    "rgb(4, 112, 202)",
-    "rgb(107, 10, 255)",
-    "rgb(183, 0, 218)",
-    "rgb(218, 0, 171)",
-    "rgb(230, 64, 92)",
-    "rgb(232, 98, 63)",
-    "rgb(249, 129, 47)"
-  ];
+  const colors = ["rgb(28, 117, 188)", "rgb(40, 170, 225)", "rgb(247, 148, 29)", "rgb(252, 176, 64)", "rgb(237, 27, 36)", "rgb(185, 31, 37)"];
 
   const [currentColors, setCurrentColors] = React.useState(colors);
   const [count, setCount] = React.useState(0);
@@ -36,7 +25,7 @@ export function ColourfulText({ text }: { text: string }) {
         y: 0
       }}
       animate={{
-        color: currentColors[index % currentColors.length],
+        // color: currentColors[index % currentColors.length],
         y: [0, -3, 0],
         scale: [1, 1.01, 1],
         filter: ["blur(0px)", `blur(5px)`, "blur(0px)"],
@@ -46,7 +35,7 @@ export function ColourfulText({ text }: { text: string }) {
         duration: 0.5,
         delay: index * 0.05
       }}
-      className="inline-block font-sans tracking-tight whitespace-pre"
+      className="inline-block text-5xl tracking-tight whitespace-pre"
     >
       {char}
     </motion.span>
