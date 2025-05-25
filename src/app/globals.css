@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant unicorn (&:where([data-theme=unicorn], [data-theme=unicorn] *));
+
+
+@theme inline {
+  --color-primary: oklch(0.6955 0.1871 232.45);
+  --color-primary-dark: oklch(0.4471 0.1564 248.31);
+  --color-secondary: oklch(0.8235 0.1776 72.6);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+    from {
+      background-position:
+              50% 50%,
+              50% 50%;
+    }
+    to {
+      background-position:
+              350% 50%,
+              350% 50%;
+    }
+  }
+}
+
+
+@utility container {
+  padding-inline: 0.75rem;
+  margin-inline: auto;
+
+  @variant sm {
+    padding-inline: 1rem;
+  }
+
+  @variant lg {
+    padding-inline: 2rem;
+  }
+}
+
+
+
+.scrollbar {
+  &-thin {
+    scrollbar-width: thin !important;
+    scrollbar-color: #eee !important;
+  }
+}
