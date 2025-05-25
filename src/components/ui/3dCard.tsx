@@ -97,9 +97,9 @@ export const CardItem = ({
   };
 
   return (
-    <Tag ref={ref} className={cn("w-fit transition duration-200 ease-linear", className)} {...rest}>
-      {children}
-    </Tag>
+    <div ref={ref} className={cn("w-fit transition duration-200 ease-linear", className)} {...rest}>
+      {children as React.ReactNode}
+    </div>
   );
 };
 
