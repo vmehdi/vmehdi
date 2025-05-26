@@ -76,6 +76,10 @@
   }
 }
 
+@utility bg-backdrop {
+  @apply unicorn:bg-black/10 unicorn:text-white unicorn:border-white/10 border bg-white/10 backdrop-blur-sm dark:border-white/[0.2] dark:bg-white/10
+}
+
 
 
 .scrollbar {
