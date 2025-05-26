@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { FooterLinks } from "@/components/Links";
 import { ColourfulText } from "@/components/ui/ColourfulText";
 
 export default function HomePage() {
@@ -52,9 +51,6 @@ export default function HomePage() {
                 projects from concept to completion.
               </p>
             </article>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3 p-6">
-              <FooterLinks />
-            </div>
           </div>
         </section>
       </div>

@@ -10,7 +10,7 @@ export function BackgroundContainer() {
 
   return (
     <>
-      {theme === "dark" && <BackgroundGradientAnimation />}
+      {theme === "unicorn" && <BackgroundGradientAnimation />}
       <BackgroundBeam />
     </>
   );

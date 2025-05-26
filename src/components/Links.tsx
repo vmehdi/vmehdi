@@ -1,3 +1,4 @@
+"use client";
 import { CloudDownload, Github, Gitlab, Instagram, Linkedin, Mail, MessageCircleCode, Phone } from "lucide-react";
 import React, { useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "motion/react";
@@ -10,7 +11,11 @@ const LINKS = [
   { title: "GitHub", href: "https://github.com/vmehdi", icon: <Github size={28} /> },
   { title: "Linkedin", href: "https://www.linkedin.com/in/vmehdi/", icon: <Linkedin size={28} /> },
   // {title: 'Instagram', href: "https://www.instagram.com/_mvaezi/", icon: <Instagram size={28} />},
-  // {title: 'Whatsapp', href: "https://api.whatsapp.com/send?phone=16282454637&text=Hello%2C%20I%20am%20sending%20a%20message%20through%20your%20site", icon: <MessageCircleCode size="28" />},
+  {
+    title: "Whatsapp",
+    href: "https://api.whatsapp.com/send?phone=16282454637&text=Hello%2C%20I%20am%20sending%20a%20message%20through%20your%20site",
+    icon: <MessageCircleCode size="28" />
+  },
   { title: "Resume-PDF", href: "/Mehdi_Vaezi-CV.pdf", icon: <CloudDownload size="28" />, className: "" }
 ];
 
@@ -30,7 +35,12 @@ export function FooterLinks() {
   return (
     <>
       {LINKS.map((item, index) => (
-        <div className="group relative z-10" key={index} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+        <div
+          className={cn("group relative z-10", index + 1 === LINKS.length && "col-span-2")}
+          key={index}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           <AnimatePresence mode="popLayout">
             {hoveredIndex === index && (
               <motion.div
@@ -45,6 +55,7 @@ export function FooterLinks() {
                     damping: 10
                   }
                 }}
+                key={index}
                 exit={{ opacity: 0, y: 20, scale: 0.6 }}
                 style={{
                   translateX: translateX,
@@ -63,11 +74,11 @@ export function FooterLinks() {
             href={item.href}
             onMouseMove={handleMouseMove}
             className={cn(
-              "hover:text-secondary relative flex flex-col items-center gap-2 object-top p-2 transition duration-500 group-hover:z-30 group-hover:scale-105",
+              "group-hover:text-secondary group-hover:unicorn:bg-white/10 unicorn:border-white/20 relative flex flex-col items-center gap-2 rounded-xl border border-black/20 object-top py-2 transition duration-500 group-hover:z-30 group-hover:bg-white/10 sm:py-4 dark:border-white/20",
               item.className
             )}
           >
-            {item.icon}
+            <span className="transition group-hover:scale-120">{item.icon}</span>
             <small className="md:hidden">{item.title}</small>
           </a>
         </div>

@@ -4,11 +4,10 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import { BackgroundBeam } from "@/components/ui/BackgroundBeam";
 import React from "react";
 import { AppBar } from "@/components/AppBar";
-import { BackgroundGradientAnimation } from "@/components/ui/BackgroundGradientAnimation";
 import { BackgroundContainer } from "@/components/ui/BackgroundContainer";
+import { Footer } from "@/components/ui/Footer";
 
 const spaceSans = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
@@ -68,7 +67,10 @@ export default function RootLayout({
         <ThemeProvider enableSystem enableColorScheme themes={["light", "dark", "unicorn"]}>
           <AppBar />
           <BackgroundContainer />
-          <main className=" min-h-dvh bg-gray-50 pt-32 dark:bg-gray-800">{children}</main>
+          <main className=" unicorn:text-white min-h-dvh bg-gray-50 pt-32 dark:bg-gray-800">
+            {children}
+            <Footer />
+          </main>
           <SpeedInsights />
           <Analytics />
         </ThemeProvider>
