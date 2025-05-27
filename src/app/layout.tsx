@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "max-snippet": -1
     }
   },
-  metadataBase: new URL("https://mvaezi.com"),
+  metadataBase: new URL("https://vmehdi.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -45,10 +45,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: "/icon.png",
-    title: "mvaezi.com",
+    title: "Mehdi Vaezi",
     description: "Mehdi Vaezi personal website. Javascript Engineer | Vue/Nuxt | React/Next | React-Native",
-    url: "https://mvaezi.com",
-    siteName: "mvaezi.com",
+    url: "https://vmehdi.com",
+    siteName: "vmehdi.com",
     type: "website"
   },
   icons: {

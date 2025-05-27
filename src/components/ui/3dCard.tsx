@@ -31,7 +31,7 @@ export const CardContainer = ({ children, className, containerClassName }: { chi
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        className={cn("flex items-center justify-center py-20", containerClassName)}
+        className={cn("flex items-center justify-center", containerClassName)}
         style={{
           perspective: "1000px"
         }}
@@ -96,10 +96,22 @@ export const CardItem = ({
     }
   };
 
+  // Only pass ref to the Tag if it's a valid HTML element type
+  const tagProps = {
+    className: cn("w-fit transition duration-200 ease-linear", className),
+    ...rest,
+  };
+
+  // Only add ref if Tag is a valid HTML element type
+  if (typeof Tag === 'string') {
+    Object.assign(tagProps, { ref });
+  }
+
   return (
-    <div ref={ref} className={cn("w-fit transition duration-200 ease-linear", className)} {...rest}>
-      {children as React.ReactNode}
-    </div>
+    // @ts-ignore
+    <Tag {...tagProps}>
+      {children}
+    </Tag>
   );
 };
 
