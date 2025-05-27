@@ -28,7 +28,7 @@ export default function ProjectsPage() {
   if (__DEV__) {
     return (
       <div className="relative z-10 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Projects</h1>
+        <h1 className="mt-8 text-4xl font-bold">Projects</h1>
         <h4></h4>
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {PROJECTS.map((project, index) => (
