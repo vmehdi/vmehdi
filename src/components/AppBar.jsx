@@ -11,7 +11,7 @@ const navItems = [
   },
   {
     name: "Projects",
-    href: "/#",
+    href: "/projects",
     icon: <LayoutPanelLeft size={28} />
   }
   // {

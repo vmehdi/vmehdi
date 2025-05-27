@@ -1,6 +1,8 @@
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3dCard";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
+import { __DEV__ } from "@/utils/helper";
+import { UnderConstruction } from "@/components/ui/UnderConstruction";
 
 const PROJECTS = [
   {
@@ -23,16 +25,25 @@ const PROJECTS = [
   }
 ];
 export default function ProjectsPage() {
-  return (
-    <div className="relative z-10 flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold">Projects</h1>
-      <h4></h4>
-      <div className="mt-12 grid gap-8 lg:grid-cols-2">
-        {PROJECTS.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+  if (__DEV__) {
+    return (
+      <div className="relative z-10 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold">Projects</h1>
+        <h4></h4>
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+          {PROJECTS.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+        {/* /.grid */}
       </div>
-      {/* /.grid */}
+    );
+  }
+
+  return (
+    <div className="relative flex flex-col items-center justify-center">
+      <h2 className="mt-8 mb-24 text-3xl font-bold ">Under Construction</h2>
+      <UnderConstruction />
     </div>
   );
 }
