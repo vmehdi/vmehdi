@@ -20,8 +20,8 @@ const PROJECTS = [
   {
     title: "Tazebar",
     description: "Hover over this card to unleash the power of CSS perspective",
-    image: "/images/kamandar.jpg",
-    link: "https://twitter.com/mannupaaji"
+    image: "/images/tazebar.jpg",
+    link: "https://tazebar.com"
   }
 ];
 export default function ProjectsPage() {
