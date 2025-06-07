@@ -1,5 +1,6 @@
 "use client";
-import { Home, LayoutPanelLeft, MessageSquareMore } from "lucide-react";
+
+import { BriefcaseBusiness, Home, LayoutPanelLeft } from "lucide-react";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { GlowingEffect } from "@/components/ui/GlowingEffect";
 
@@ -8,6 +9,11 @@ const navItems = [
     name: "Home",
     href: "/",
     icon: <Home size={28} />
+  },
+  {
+    name: "Experience",
+    href: "/experience",
+    icon: <BriefcaseBusiness size={28} />
   },
   {
     name: "Projects",
