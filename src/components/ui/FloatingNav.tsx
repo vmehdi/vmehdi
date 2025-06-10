@@ -47,7 +47,7 @@ export const FloatingNav = ({
           duration: 0.2
         }}
         className={cn(
-          "unicorn:bg-black/10 unicorn:border-white/10 fixed inset-x-4 top-8 z-50 mx-auto flex h-20 max-w-2xl items-center justify-center space-x-8 rounded-full border border-black/5 bg-white/10 px-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-sm dark:border-white/[0.2] dark:bg-white/10",
+          "unicorn:bg-black/10 unicorn:border-white/10 unicorn:before:border-white fixed inset-x-4 top-8 z-50 mx-auto flex h-20 max-w-2xl items-center before:absolute before:border before:mask-linear-20 before:mask-linear-to-30% before:rounded-full before:inset-0 justify-center space-x-8 rounded-full border border-black/5 bg-white/10 px-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-sm dark:border-white/20 before:content-[''] before:-z-10 before:dark:border-white dark:bg-white/10",
           className
         )}
       >
