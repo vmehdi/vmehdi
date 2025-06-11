@@ -14,7 +14,7 @@
 
 - 📫 How to reach me **mh.vaezi@gmail.com** or **vmehdev@gmail.com**
 
-- 🌐 My website is: [https://vmehdi.com/](vmehdi.com)
+- 🌐 My website is: [vmehdi.com](https://vmehdi.com/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
