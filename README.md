@@ -10,9 +10,11 @@
 
 - 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/vmehdi/](https://www.linkedin.com/in/vmehdi/)
 
-- 💬 Ask me about **nextjs, react, vue, nuxt**
+- 💬 Ask me about **nextjs, react, vue, nuxt, svelte**
 
-- 📫 How to reach me **mh.vaezi@gmail.com**
+- 📫 How to reach me **mh.vaezi@gmail.com** or **vmehdev@gmail.com**
+
+- 🌐 My website is: [https://vmehdi.com/](vmehdi.com)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
