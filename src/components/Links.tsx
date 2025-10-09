@@ -5,18 +5,18 @@ import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from
 import { cn } from "@/utils/cn";
 
 const LINKS = [
-  { title: "Mobile", href: "tel:+989126388852", icon: <Phone size={28} /> },
+  // { title: "Mobile", href: "tel:+989126388852", icon: <Phone size={28} /> },
   { title: "Email", href: "mailto:vmehdev@gmail.com", icon: <Mail size={28} /> },
-  { title: "GitLab", href: "https://gitlab.com/mvaezi", icon: <Gitlab size={28} /> },
+  { title: "GitLab", href: "https://gitlab.com/vmehdi", icon: <Gitlab size={28} /> },
   { title: "GitHub", href: "https://github.com/vmehdi", icon: <Github size={28} /> },
   { title: "Linkedin", href: "https://www.linkedin.com/in/vmehdi/", icon: <Linkedin size={28} /> },
   // {title: 'Instagram', href: "https://www.instagram.com/_mvaezi/", icon: <Instagram size={28} />},
-  {
-    title: "Whatsapp",
-    href: "https://api.whatsapp.com/send?phone=16282454637&text=Hello%2C%20I%20am%20sending%20a%20message%20through%20your%20site",
-    icon: <MessageCircleCode size="28" />
-  },
-  { title: "Resume-PDF", href: "/Mehdi_Vaezi-CV.pdf", icon: <CloudDownload size="28" />, className: "" }
+  // {
+  //   title: "Whatsapp",
+  //   href: "https://api.whatsapp.com/send?phone=16282454637&text=Hello%2C%20I%20am%20sending%20a%20message%20through%20your%20site",
+  //   icon: <MessageCircleCode size="28" />
+  // },
+  // { title: "Resume-PDF", href: "/Mehdi_Vaezi-CV.pdf", icon: <CloudDownload size="28" />, className: "" }
 ];
 
 export function FooterLinks() {
