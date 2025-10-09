@@ -4,15 +4,13 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vmehdi" alt="mehdivaezi" /></a> </p>
 
-- 🔭 I’m currently working on **Kamaan.com, Tarafdari.com**
-
-- 🌱 I’m currently learning **ElysiaJs, Prisma**
+- 🔭 I’m currently working on **Segmentaim**
 
 - 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/vmehdi/](https://www.linkedin.com/in/vmehdi/)
 
-- 💬 Ask me about **nextjs, react, vue, nuxt, svelte**
+- 💬 Ask me about **nextjs, react, vue, nuxt, svelte, Node.js, Bun/Elysia, SQL**
 
-- 📫 How to reach me **mh.vaezi@gmail.com** or **vmehdev@gmail.com**
+- 📫 How to reach me **vmehdev@gmail.com**
 
 - 🌐 My website is: [vmehdi.com](https://vmehdi.com/)
 
