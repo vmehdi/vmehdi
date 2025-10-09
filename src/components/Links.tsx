@@ -9,7 +9,7 @@ const LINKS = [
   { title: "Email", href: "mailto:vmehdev@gmail.com", icon: <Mail size={28} /> },
   { title: "GitLab", href: "https://gitlab.com/vmehdi", icon: <Gitlab size={28} /> },
   { title: "GitHub", href: "https://github.com/vmehdi", icon: <Github size={28} /> },
-  { title: "Linkedin", href: "https://www.linkedin.com/in/vmehdi/", icon: <Linkedin size={28} /> },
+  { title: "Linkedin", href: "https://www.linkedin.com/in/vmehdi/", icon: <Linkedin size={28} /> }
   // {title: 'Instagram', href: "https://www.instagram.com/_mvaezi/", icon: <Instagram size={28} />},
   // {
   //   title: "Whatsapp",
@@ -74,8 +74,7 @@ export function FooterLinks() {
             href={item.href}
             onMouseMove={handleMouseMove}
             className={cn(
-              "group-hover:text-secondary group-hover:unicorn:bg-white/10 unicorn:border-white/20 relative flex flex-col items-center gap-2 rounded-xl border border-black/20 object-top py-2 transition duration-500 group-hover:z-30 group-hover:bg-white/10 sm:py-4 dark:border-white/20",
-              item.className
+              "group-hover:text-secondary group-hover:unicorn:bg-white/10 unicorn:border-white/20 relative flex flex-col items-center gap-2 rounded-xl border border-black/20 object-top py-2 transition duration-500 group-hover:z-30 group-hover:bg-white/10 sm:py-4 dark:border-white/20"
             )}
           >
             <span className="transition group-hover:scale-120">{item.icon}</span>
