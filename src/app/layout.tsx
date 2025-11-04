@@ -65,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={spaceSans.className}>
       <head>
-        <Script src="https://cdn.segmentaim.com/dev/loader.js" type="module" data-k="68dbc62b83bc2"></Script>
+        <Script src="https://cdn.segmentaim.com/dev/loader.js" type="module" data-k="68dbc62b83bc2" strategy="afterInteractive" crossOrigin="anonymous"></Script>
         <Script id="hotjar-tracking" strategy="beforeInteractive">{`(function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
           h._hjSettings={hjid:6494685,hjsv:6};
