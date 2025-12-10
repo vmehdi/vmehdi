@@ -27,8 +27,8 @@ services:
       retries: 3
       start_period: 40s
     networks:
-      - vmehdi-network
+      - mehdi-net
 
 networks:
-  vmehdi-network:
-    driver: bridge
+  mehdi-net:
+    external: true
