@@ -56,14 +56,14 @@ export default function HomePage() {
               <p>
                 Originally rooted in front‑end engineering, I’ve grown into a full‑stack architect who designs and delivers production-grade systems. I’ve led
                 complex projects involving:
-                <ul className="list-inside list-disc">
-                  <li>Modern JavaScript frameworks (React, Vue, Next.js, Nuxt)</li>
-                  <li>Back-end architecture using Node.js, Bun, and Elysia.js</li>
-                  <li>Real-time infrastructure with WebSocket, Kafka, Redis, and QuestDB</li>
-                  <li>Distributed system design, config/versioning/CDN strategies</li>
-                  <li>CI/CD pipelines, Docker, DevOps, and server security (UFW, RAID, Nginx, TLS)</li>
-                </ul>
               </p>
+              <ul className="list-inside list-disc">
+                <li>Modern JavaScript frameworks (React, Vue, Next.js, Nuxt)</li>
+                <li>Back-end architecture using Node.js, Bun, and Elysia.js</li>
+                <li>Real-time infrastructure with WebSocket, Kafka, Redis, and QuestDB</li>
+                <li>Distributed system design, config/versioning/CDN strategies</li>
+                <li>CI/CD pipelines, Docker, DevOps, and server security (UFW, RAID, Nginx, TLS)</li>
+              </ul>
               <p className="mt-2">
                 I enjoy turning abstract ideas into working systems — from tracking scripts used across production websites, to building backends that handle
                 millions of events per day.
