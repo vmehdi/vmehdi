@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/next";
 import React from "react";
 import { AppBar } from "@/components/AppBar";
 import { BackgroundContainer } from "@/components/ui/BackgroundContainer";
-import { Footer } from "@/components/ui/Footer";
+
 import { TrackingScripts } from "@/components/TrackingScripts";
 
 const spaceSans = Space_Grotesk({
@@ -68,12 +68,11 @@ export default function RootLayout({
         <TrackingScripts />
       </head>
       <body>
-        <ThemeProvider enableSystem enableColorScheme themes={["light", "dark", "unicorn"]}>
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem enableColorScheme themes={["light", "dark", "unicorn"]}>
           <AppBar />
           <BackgroundContainer />
-          <main className=" unicorn:text-white min-h-dvh bg-gray-50 pt-32 dark:bg-gray-800">
+          <main className=" unicorn:text-white min-h-dvh transition-colors duration-300">
             {children}
-            <Footer />
           </main>
           <SpeedInsights />
           <Analytics />

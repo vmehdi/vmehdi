@@ -2,16 +2,23 @@
 
 import { useTheme } from "next-themes";
 import { BackgroundBeam } from "@/components/ui/BackgroundBeam";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BackgroundGradientAnimation } from "@/components/ui/BackgroundGradientAnimation";
 
 export function BackgroundContainer() {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const currentTheme = mounted ? theme : null;
 
   return (
-    <>
-      {theme === "unicorn" && <BackgroundGradientAnimation />}
+    <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
+      {currentTheme === "unicorn" && <BackgroundGradientAnimation />}
       <BackgroundBeam />
-    </>
+    </div>
   );
 }
