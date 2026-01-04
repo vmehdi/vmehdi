@@ -224,7 +224,8 @@ export default function HomePage() {
               opacity: useTransform(smoothProgress, [0.18, 0.22, 0.45, 0.5], [0, 1, 1, 0]),
               x: useTransform(smoothProgress, [0.45, 0.5], ["0%", "100%"]), // Exit right
               filter: useTransform(smoothProgress, [0.45, 0.5], ["blur(0px)", "blur(10px)"]),
-              pointerEvents: useTransform(smoothProgress, (v) => (v >= 0.22 && v < 0.5) ? "auto" : "none")
+              pointerEvents: useTransform(smoothProgress, (v) => (v >= 0.22 && v < 0.5) ? "auto" : "none"),
+              display: useTransform(smoothProgress, (v) => (v >= 0.15) ? "flex" : "none")
             }}
             className="absolute inset-0 flex items-center justify-center p-4 w-full h-full"
           >
@@ -259,7 +260,8 @@ export default function HomePage() {
               x: useTransform(smoothProgress, [0.45, 0.5], ["-100%", "0%"]), // Enter Left
               opacity: useTransform(smoothProgress, [0.45, 0.5, 0.7, 0.75], [0, 1, 1, 0]),
               y: useTransform(smoothProgress, [0.7, 0.75], ["0%", "-100%"]), // Exit Up
-              pointerEvents: useTransform(smoothProgress, (v) => (v >= 0.5 && v < 0.75) ? "auto" : "none")
+              pointerEvents: useTransform(smoothProgress, (v) => (v >= 0.5 && v < 0.75) ? "auto" : "none"),
+              display: useTransform(smoothProgress, (v) => (v >= 0.4) ? "flex" : "none")
             }}
             className="absolute inset-0 flex flex-col items-center justify-center p-4 w-full h-full"
           >
@@ -289,7 +291,8 @@ export default function HomePage() {
             style={{
               y: useTransform(smoothProgress, [0.7, 0.75], ["100%", "0%"]), // Enter Bottom
               opacity: useTransform(smoothProgress, [0.7, 0.75], [0, 1]),
-              pointerEvents: useTransform(smoothProgress, (v) => v >= 0.75 ? "auto" : "none")
+              pointerEvents: useTransform(smoothProgress, (v) => v >= 0.75 ? "auto" : "none"),
+              display: useTransform(smoothProgress, (v) => (v >= 0.65) ? "flex" : "none")
             }}
             className="absolute inset-0 flex items-center justify-center p-4 w-full h-full"
           >
