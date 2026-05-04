@@ -141,7 +141,7 @@ export default function ProjectsPage() {
       {/* Interactive gradient background */}
       <InteractiveGradient className="pointer-events-none fixed inset-0 -z-10" />
 
-      <div className="container relative z-10 mx-auto px-4 py-12 md:py-20">
+      <div className="container relative z-10 mx-auto px-4 pb-12 pt-28 md:pb-20 md:pt-36">
         {/* Page Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
