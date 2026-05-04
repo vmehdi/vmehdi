@@ -6,7 +6,7 @@ export function TrackingScripts() {
   return (
     <>
       <Script
-        src="https://cdn.segmentaim.com/dev/loader.js"
+        src="https://cdn.segmentaim.com/loader.js"
         type="module"
         data-k="68dbc62b83bc2"
         strategy="afterInteractive"
