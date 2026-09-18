@@ -6,11 +6,21 @@ export function TrackingScripts() {
   return (
     <>
       <Script
-        src="https://cdn.segmentaim.com/loader.js"
+        src="https://cdn.segmentaim.com/loader.js?k=6aacfe030561d"
         type="module"
-        data-k="68dbc62b83bc2"
         strategy="afterInteractive"
         crossOrigin="anonymous"
+      />
+      <Script
+        id="clarity-tracking"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `(function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "yk5ofs2rre");`
+        }}
       />
       <Script
         src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"
